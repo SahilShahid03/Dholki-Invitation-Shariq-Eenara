@@ -337,7 +337,8 @@ body{
   display:inline-block;
   font-family:var(--font-body);
   font-weight:600;
-  font-size:1.6rem;
+  font-style:italic;
+  font-size:2rem;
   letter-spacing:0.12em;
   color:var(--marigold-deep);
   background:linear-gradient(120deg, rgba(240,116,12,0.16), rgba(217,160,42,0.16));
@@ -347,8 +348,9 @@ body{
 }
 
 @media (max-width:480px){
-  .event-tag{ font-size:1.3rem; letter-spacing:0.08em; padding:6px 20px; }
+  .event-tag{ font-size:1.6rem; letter-spacing:0.08em; padding:6px 20px; }
 }
+
 .eyebrow{
   font-family:var(--font-accent);
   font-style:italic;
