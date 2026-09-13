@@ -216,7 +216,7 @@ body{
   opacity:0;
   pointer-events:none;
   transition:opacity .35s ease;
-  z-index:95;
+  z-index:190;
 }
 .nav-scrim.show{ opacity:1; pointer-events:auto; }
 
@@ -752,9 +752,15 @@ body{
   cursor:pointer;
   box-shadow:0 12px 26px -10px rgba(184,91,15,0.6);
   z-index:150;
-  transition:transform .25s ease, background .25s ease;
+  transition:transform .25s ease, background .25s ease, opacity .25s ease;
 }
 .music-toggle:hover{ transform:scale(1.07); background:var(--marigold-deep); }
+
+body.no-scroll .music-toggle{
+  opacity:0;
+  pointer-events:none;
+  transform:scale(0.85);
+}
 .music-toggle svg{ width:21px; height:21px; }
 .music-toggle .icon-play{ margin-left:3px; }
 .music-toggle .icon-pause{ display:none; }
