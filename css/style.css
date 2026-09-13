@@ -208,7 +208,7 @@ body{
 .nav-toggle span:nth-child(3){ top:31px; }
 .nav-toggle.open span:nth-child(1){ top:23px; transform:rotate(45deg); }
 .nav-toggle.open span:nth-child(2){ opacity:0; }
-.nav-toggle.open span:nth-child(3){ top:23px; transform:rotate(-135deg); }
+.nav-toggle.open span:nth-child(3){ top:23px; transform:rotate(-45deg); }
 
 .nav-scrim{
   position:fixed; inset:0;
@@ -216,7 +216,7 @@ body{
   opacity:0;
   pointer-events:none;
   transition:opacity .35s ease;
-  z-index:190;
+  z-index:95;
 }
 .nav-scrim.show{ opacity:1; pointer-events:auto; }
 
